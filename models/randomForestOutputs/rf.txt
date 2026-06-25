@@ -1,0 +1,69 @@
+Accuracy: 0.9896153846153846
+              precision    recall  f1-score   support
+
+           0       0.99      0.98      0.98       800
+           1       0.98      0.99      0.98       800
+           2       1.00      1.00      1.00       400
+           3       1.00      1.00      1.00       600
+
+    accuracy                           0.99      2600
+   macro avg       0.99      0.99      0.99      2600
+weighted avg       0.99      0.99      0.99      2600
+
+
+
+
+--------------------Top 20 Important Features (Gini Importance)--------------------
+                   feature  importance
+63                     mov    0.039465
+0                      add    0.038056
+34                     cmp    0.037844
+297   data_movement_scalar    0.037216
+288     integer_arithmetic    0.036929
+292   comparison_fp_scalar    0.026944
+289        logical_bitwise    0.026528
+291         shifts_rotates    0.020747
+77                  movzbl    0.018988
+4                      sub    0.017205
+310       cet_shadow_stack    0.015454
+317  comparison_fp_scalar%    0.015246
+304    simd_shuffle_unpack    0.015137
+300     simd_data_movement    0.014850
+295  control_flow_branches    0.014772
+178                   cmp%    0.014757
+70                    push    0.014000
+50                     jmp    0.013822
+68                     lea    0.013360
+14                     and    0.013236
+
+
+--------------------Top 20 Features: Permutation Importance--------------------
+                   feature  importance
+540   data_movement_scalar    0.006923
+120                    mov    0.004462
+0                      add    0.003231
+68                     cmp    0.002000
+530     integer_arithmetic    0.001769
+108                    jle    0.001385
+545     simd_data_movement    0.000923
+514               endbr64%    0.000769
+232             vzeroupper    0.000538
+537  control_flow_branches    0.000538
+123                   movq    0.000538
+24                     and    0.000538
+533         shifts_rotates    0.000462
+548        simd_comparison    0.000462
+130                    pop    0.000462
+138                 movzwl    0.000462
+395                   pop%    0.000385
+302                   not%    0.000385
+560    integer_arithmetic%    0.000385
+165                vmovdqu    0.000385
+
+
+--------------------Cross Validation Accuracy--------------------
+CV accuracy: [0.89346154 0.99192308 0.98461538 0.97615385 0.96576923]
+Mean CV accuracy: 0.9623846153846154
+
+
+
